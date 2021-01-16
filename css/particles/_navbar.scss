@@ -51,6 +51,11 @@
     right:10px;
     border: none;
     background: transparent !important;
+    &:focus {
+      text-decoration: none;
+      outline: 0;
+      box-shadow: none;
+    }
   }
 
   .navbar-toggler .top-bar {
