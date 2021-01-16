@@ -32,9 +32,32 @@ section{
     background-position: top;
     background-size: cover;
     background-attachment: fixed;
+    a{
+      text-decoration: underline;
+    }
   }
   h2{
     font-size: $big-text;
+  }
+  &.komitet{
+    b{
+      font-size: $text;
+      text-align: left;
+    }
+    span{
+      font-size: $text;
+      text-align: left;
+    }
+    .kometet-item{
+      padding-bottom: 10px;
+      border-bottom: 2px solid rgba($btext, .25);
+      &.alt{
+        border-bottom: none;
+      }
+    }
+  }
+  &.konf{
+    min-height: 450px;
   }
 }
 
@@ -54,6 +77,21 @@ h4{
   section{
     h2{
       font-size: $heading;
+    }
+    p{
+      font-size: 1rem;
+    }
+    &.komitet{
+      b{
+        display: block;
+        font-size: 1rem;
+        text-align: center;
+      }
+      span{
+        display: block;
+        font-size: 1rem;
+        text-align: center;
+      }
     }
   }
 }

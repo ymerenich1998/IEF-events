@@ -42,7 +42,9 @@
   font-weight: bold;
   padding: 10px 60px; }
   .btn-ief:hover {
-    transform: scale(1.2); }
+    transform: scale(1.1); }
+  .btn-ief:focus {
+    box-shadow: none; }
 
 * {
   scroll-behavior: smooth;
@@ -240,8 +242,23 @@ section {
     background-position: top;
     background-size: cover;
     background-attachment: fixed; }
+    section.material a {
+      text-decoration: underline; }
   section h2 {
     font-size: 4rem; }
+  section.komitet b {
+    font-size: 1.25rem;
+    text-align: left; }
+  section.komitet span {
+    font-size: 1.25rem;
+    text-align: left; }
+  section.komitet .kometet-item {
+    padding-bottom: 10px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.25); }
+    section.komitet .kometet-item.alt {
+      border-bottom: none; }
+  section.konf {
+    min-height: 450px; }
 
 h4 {
   position: relative; }
@@ -255,7 +272,31 @@ h4 {
 
 @media (max-width: 768px) {
   section h2 {
-    font-size: 2.875rem; } }
+    font-size: 2.875rem; }
+  section p {
+    font-size: 1rem; }
+  section.komitet b {
+    display: block;
+    font-size: 1rem;
+    text-align: center; }
+  section.komitet span {
+    display: block;
+    font-size: 1rem;
+    text-align: center; } }
+footer {
+  min-height: 600px;
+  background-color: #0789BA; }
+  footer .contact_map {
+    background-color: #fff;
+    min-height: 300px; }
+    footer .contact_map h5 {
+      font-size: 1.5rem; }
+    footer .contact_map iframe {
+      margin-bottom: -7px; }
+
+@media screen and (max-width: 767px) {
+  footer .contact_map h5 {
+    font-size: 1.25rem; } }
 :target {
   display: block;
   position: relative;
