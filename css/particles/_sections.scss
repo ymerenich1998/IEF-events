@@ -1,0 +1,59 @@
+section{
+  min-height: 500px;
+  p{
+    font-size: $text;
+    font-weight: 300;
+  }
+  &.alt{
+    background-color: $primary-color;
+  }
+  &.tematics{
+    .icons{
+      margin: auto;
+      @include radius(100px);
+      width: 200px;
+      height: 200px;
+      background: $wtext;
+      border: 8px solid $secondary-color;
+    }
+    .tematics_title{
+      font-size: $subtitle;
+      font-weight: 500;
+    }
+  }
+  &.program{
+    background: linear-gradient(90deg, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0.65) 100%) ,url("../images/first_1.jpg") no-repeat;
+    background-position: top;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  &.material{
+    background: linear-gradient(90deg, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0.65) 100%) ,url("../images/second.jpg") no-repeat;
+    background-position: top;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  h2{
+    font-size: $big-text;
+  }
+}
+
+h4{
+  position: relative;
+  &:before{
+    content: "";
+    position: absolute;
+    width: 90px;
+    height: 3px;
+    background-color: $accent-color;
+    margin-top: 35px;
+  }
+}
+
+@media (max-width:768px) {
+  section{
+    h2{
+      font-size: $heading;
+    }
+  }
+}
