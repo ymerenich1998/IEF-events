@@ -141,6 +141,10 @@ body {
     right: 10px;
     border: none;
     background: transparent !important; }
+    .navbar .navbar-toggler:focus {
+      text-decoration: none;
+      outline: 0;
+      box-shadow: none; }
   .navbar .navbar-toggler .top-bar {
     transform: rotate(45deg);
     transform-origin: 10% 10%; }
@@ -270,9 +274,9 @@ h4 {
     background-color: #FEC000;
     margin-top: 35px; }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   section h2 {
-    font-size: 2.875rem; }
+    font-size: 1.75rem; }
   section p {
     font-size: 1rem; }
   section.komitet b {
