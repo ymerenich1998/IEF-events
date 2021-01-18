@@ -242,7 +242,7 @@ section {
     background-size: cover;
     background-attachment: fixed; }
   section.material {
-    background: linear-gradient(90deg, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.65) 100%), url("../images/second.jpg") no-repeat;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.65) 100%), url("../images/seconds.jpg") no-repeat;
     background-position: top;
     background-size: cover;
     background-attachment: fixed; }
